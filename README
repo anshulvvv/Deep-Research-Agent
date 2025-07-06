@@ -1,0 +1,52 @@
+Overview
+
+This tool runs a deep-research agent to process queries, perform literature and web searches, and generate structured reports.
+
+Prerequisites
+
+• Python 3.8 or later  
+• A valid GEMINI_API key (set as an environment variable) , Note : A API key is already present in code.
+
+Installation
+
+1. Create and activate a virtual environment:
+   • Unix/macOS:
+   python -m venv venv
+   source venv/bin/activate
+   • Windows:
+   python -m venv venv
+   venv\Scripts\activate
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+Usage
+
+1. Ensure your GEMINI_API key is set (or configure it in config.py).
+2. Run the main script:
+   python main.py
+3. Follow the interactive prompts to enter your research query and confirm tasks.
+
+Outputs
+
+cot.log
+Detailed chain-of-thought logs for each summarization step.
+
+Report.json
+JSON-formatted structured results.
+
+final_report.md
+Human-readable Markdown report generated from Report.json.
+
+Troubleshooting
+
+• If you see 429 Too Many Requests, reduce query rate or update API quotas.
+
+Made By -> Group 6
+
+Group Members :
+
+Anshul Maheshwari
+Sugeet Sood
+Subit Panda
+Ekansh Nayak
